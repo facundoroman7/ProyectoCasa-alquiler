@@ -1,0 +1,69 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: whitesmoke;
+    color: white;
+    padding: 20px 0;
+}
+
+.nav-container {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-menu {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: purple;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-menu .logo a {
+    font-weight: bold;
+    color: black;
+}
+
+
+.nav-menu li a:hover {
+    color: black    ;
+}
+
+
+/*section*/
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#hero p{
+    color:black;
+    font-size: 20px;
+}
+
