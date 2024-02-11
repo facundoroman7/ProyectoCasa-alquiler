@@ -1,32 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="nav-container">
                 <ul class="nav-menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li class="logo"><a href="#">LOGO</a></li>
-                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#departamentos">departamentos</a></li>
+                    <li><a href="#instalaciones">instalaciones</a></li>
+                    <li class="logo"><a href="#"><img src="./imagenes/Logo2.png" alt="logo" width="150px"></a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                    <li><a href="#ubicacion">ubicacion</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
+        <!--section principal con imagen-->
         <section id="hero">
-            <img src="./imagenes/bg-inicio.jpg" alt="foto principal" >
-            <p>A pocos metros del mar, cerca del bosque histórico, próximo a la Av. 3 y las amplias playas de barrio norte que se caracteriza por ser un ambiente familiar, donde podrá encontrar los balnearios Puerto Paraíso y Austral que poseen convenios con Villa Olimpia.</p>
+            <p>A pocos metros del mar, cerca del bosque histórico, próximo a la Av. 3 y las amplias playas de barrio
+                norte que se caracteriza por ser un ambiente familiar, donde podrá encontrar los balnearios Puerto
+                Paraíso y Austral que poseen convenios con Villa Olimpia.</p>
         </section>
+        <!--section de atencion y descripcion corta-->
+        <section class="section-Dos-container">
+            <h2 class="titulo-persinalizada">Atención personalizada de sus dueños</h2>
+            <p class="parrafo-personalizada">Disponemos de un amplio jardín con Piscina climatizada, sector de parrillas
+                y un amplio deck en altura con vista al mar.</p>
+            <small class="small-bolder">Nuestra puntuación en Booking y GoogleMaps</small>
+
+            <div class="booking-foto">
+                <img src="./imagenes/booking.png" alt="">
+                <p class="p-numero">9,3 Fantastico</p>
+                <div class="google-foto">
+                    <img src="./imagenes/google.png" alt="">
+                    <p class="p-numero">4,8 Muy buen lugar</p>
+                </div>
+            </div>
+        </section>
+        <!--section de los departamentos que mostramos con carousel incluido-->
+        <section class="container-departamentos">
+            <h2 class="text-center p-5 p-color">Nuestras Cabañas</h2>
+            <div class="row g-0">
+
+                <div class="col-12 col-md-6 ">
+                    <h2 class="h2-departamento">Cabañas para 2, 3 y 4 Personas</h2>
+                    <p class="parrafo-de-departamento-1"> 
+                        En Planta Alta y Planta Baja, Todos los ambientes con mucha luz y sol.
+                        Camas sommier, 1 baño completo con box de vidrio y secador de cabello.
+                        TV Smart de 32” con Video Cable, Conexión Wi-Fi de fibra óptica, Cocina equipada con microondas,
+                        cafetera, tostadora, heladera con freezer inox, licuadora, Calefacción de gas natural tiro
+                        balanceado y chimenea a leña, Cofre de seguridad, Practicuna, Alarma.
+                    </p>
+                </div>
+                <!--carousel-->
+                <div id="carouselExample" class="carousel slide col-12 col-md-6" >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./imagenes/01.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagenes/02.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagenes/05.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <!--otra section del departamento-->
+
+            <div class="row g-0">
+
+                 <!--carousel-->
+                 <div id="carouselExample" class="carousel slide col-12 col-md-6" >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./imagenes/05.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagenes/02.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./imagenes/01.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+
+                <div class="col-12 col-md-6 ">
+                    <h2 class="h2-departamento">Cabañas para 4, 5 y 6 Personas</h2>
+                    <p class="parrafo-de-departamento-1"> 
+                        En Planta Baja de 2 pisos, Todos los ambientes con mucha luz y sol.
+                        Piso 1: Cocina equipada con microondas, cafetera, tostadora, heladera con freezer inox, licuadora, Living comedor con TV Smart de 43”, Toilette, Chimenea a leña.
+                        Piso 2: 1 Dormitorio matrimonial con TV Smart 32” y 1 Dormitorio con 2 camas de 1 plaza, 1 baño completo con Box de vidrio y secador de cabello.
+                        Video Cable, Conexión Wi-Fi de fibra óptica, Calefacción de gas natural tiro balanceado y chimenea a leña, Cofre de seguridad, Practicuna, Alarma.
+                    </p>
+                </div>
+               
+            </div>
+
+           
+        </section>
+
+        <!--section de instalaciones (servicios que lleva el complejo)-->
+
+        <section class="container-servicios">
+            <div class="row g-0 m-5">
+                <div class="col-12 col-md-6">
+                    <img src="./imagenes/pileta.jpg" class="w-100" alt="">
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2 class="text-center parrafo-servicios">Sobre Villa Olimpia</h2>
+                    <ul class="text-start lista-servicios">
+                        <li>- Conexión WI-FI de fibra óptica 7 antenas.</li>
+                        <hr>
+                        <li>- Garage para cuatro ciclos y motos.</li>
+                        <hr>
+                        <li>- Kayak a disposición del cliente: 1 para olas y otro para pesca.</li>
+                        <hr>
+                        <li>- Juegos de mesa a disposición.</li>
+                        <hr>
+                        <li>- Amplio jardín con Sector de parrillas.</li>
+                        <hr>
+                        <li>- Piscina climatizada.</li>
+                        <hr>
+                        <li>- Amplio deck en altura con vista al mar.</li>
+                        <hr>
+                        <li>- Clases de kitesurf y Surf c/descuento.</li>
+                        <hr>
+                        <li>- Contamos con seguro para nuestros huéspedes</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

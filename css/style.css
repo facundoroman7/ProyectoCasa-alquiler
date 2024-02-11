@@ -9,6 +9,9 @@ header {
     background-color: whitesmoke;
     color: white;
     padding: 20px 0;
+    padding-bottom: 0;
+    /* position: fixed;
+    z-index: 100; */
 }
 
 .nav-container {
@@ -31,13 +34,16 @@ header {
 .nav-menu li a {
     text-decoration: none;
     color: purple;
-    font-size: 20px;
+    font-size: 22px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav-menu .logo a {
     font-weight: bold;
     color: black;
+    
 }
 
 
@@ -48,7 +54,7 @@ header {
 
 /*section*/
 
-#hero{
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,14 +62,103 @@ header {
     flex-direction: column;
     height: 100vh;
     color: #fff;
+    background-image: url(../imagenes/bg-inicio.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    padding: 20px;
 }
 
+#hero p {
+    text-align: center;
+    color: #fff; 
+    font-size: 25px;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.616); 
+    padding: 45px; 
+    border-radius: 10px; 
+    max-width: 80%; 
+}
 
-#hero p{
-    color:black;
+/*section dos */
+
+.section-Dos-container{
+    padding: 40px;
+    text-align: center;
+}
+
+.titulo-persinalizada{
+    font-size: 3rem;
+    color: #747d2a;
+}
+.parrafo-personalizada{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.small-bolder{
+    font-weight: bolder;
+}
+
+.booking-foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 5px;
+}
+
+.google-foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 5px;
+}
+
+.p-numero{
+    font-weight: bolder;
     font-size: 20px;
 }
 
+/*departamentos section*/
+
+.container-departamentos{
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+.p-color{
+    color: #747d2a;
+    font-size: 3rem;
+}
+
+.h2-departamento{
+    color: #580849;
+    padding: 10px;
+    
+}
+.parrafo-de-departamento-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+/*container-servicios*/
+.parrafo-servicios{
+    color: #747d2a;
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.lista-servicios{
+   
+    font-weight: bolder;
+    list-style: none;
+
+}
+/* 
+li{
+    margin: 10px;
+} */
