@@ -162,3 +162,161 @@ header {
 li{
     margin: 10px;
 } */
+
+
+/*section de consultas*/
+
+.container-consultas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #fff;
+    background-image: url(../imagenes/bg-corte.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 20px;
+}
+
+.font-consultas{
+    font-size: 2.5rem;
+}
+
+.container-consultas-numeros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bolder;
+}
+
+.bg-numero{
+    background-color: #fff;
+    color: #747d2a;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 50px;
+    font-size: 2rem;
+}
+
+/*section de ubicacion*/
+
+.container-ubicacion{
+    padding: 10px;
+   
+    text-align: center;
+}
+
+.color-titulo-ubi{
+    color: #747d2a;
+    font-size: 2.5rem;
+}
+
+.font-parrafo-ubi{
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+/*container-contacto*/
+
+.container-contacto{
+    text-align: center;
+    
+    padding: 10px;
+}
+
+.color-subti-contacto{
+    color: #747d2a;
+    font-size: 2.5rem;
+    
+}
+
+.color-contacto {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.lista-contacto{
+    list-style: none;
+    
+}
+.btn-mio {
+    background-color: #a9bb22;
+    color: #fff;
+    font-weight: bolder;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+}
+
+/*container-actividades*/
+
+.container-actividades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #fff;
+    background-image: url(../imagenes/bg-golf.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 20px;
+}
+
+.text-actividades{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.parr-actividades{
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #212529;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.varias-actividades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.5rem;
+}
+
+.bg-actividades{
+    background-color: #fff;
+    color: #212529;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.bg-actividades:hover{
+    background-color: #747d2a;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+/*footer*/
+
+.footer{
+    background-color: #747d2a;
+    text-align: center;
+    padding: 30px;
+}
+.color-white{
+    color: white;
+}
+.footer-code{
+    background-color: #f8f9fa;
+    padding-top: 10px;
+    text-align: center;
+}
