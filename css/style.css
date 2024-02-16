@@ -5,13 +5,12 @@ body {
     padding: 0;
 }
 
-header {
+ header {
     background-color: whitesmoke;
     color: white;
     padding: 20px 0;
     padding-bottom: 0;
-    /* position: fixed;
-    z-index: 100; */
+
 }
 
 .nav-container {
@@ -49,7 +48,38 @@ header {
 
 .nav-menu li a:hover {
     color: black    ;
+} 
+
+.abrir-menu, .btn-cerrar{
+    font-size: 25px;
+    background: coral;
+    display: none;
+} 
+
+/* .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+} */
+
+.abrir-menu {
+    display: none; /* Ocultar el botón hamburguesa por defecto */
+}
+
+
+
 
 
 /*section*/
@@ -206,7 +236,7 @@ li{
 
 .container-ubicacion{
     padding: 10px;
-   
+    margin: 20px;
     text-align: center;
 }
 
@@ -317,6 +347,126 @@ li{
 }
 .footer-code{
     background-color: #f8f9fa;
-    padding-top: 10px;
     text-align: center;
+}
+
+@media (max-width: 576px) {
+
+    .nav-menu {
+        display: none; /* Ocultar el menú en dispositivos móviles por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo{
+        height: 50px;
+        
+    }
+
+    .nav-menu li a{
+        font-size: 18px;
+    }
+
+    .abrir-menu {
+        display: block; /* Mostrar el botón hamburguesa en dispositivos móviles */
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .abrir-menu i {
+        font-size: 24px;
+    }
+
+    .nav-menu.visible {
+        display: flex; /* Mostrar el menú cuando se abre */
+    }
+
+
+    #hero p{
+        font-size: 17px;
+        max-width: fit-content;
+    }
+
+    .section-Dos-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .booking-foto{
+        display: flex;
+        flex-direction: row;
+       
+    }
+   
+    .booking-foto p{
+        font-size: 12px;
+    }
+
+    .container-departamentos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-inner{
+        margin: 10px;
+    }
+
+    .container-servicios img{
+        margin: 15px;
+    }
+
+    .lista-servicios{
+        text-align: center;
+    }
+
+    .container-consultas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-numero{
+        font-size: 20px;
+    }
+
+    .container-consultas-numeros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista-contacto li{
+        font-size: 16px;
+        
+    }
+
+    .container-actividades{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .container-actividades h2{
+        color: #a9bb22;
+    }
+
+    .container-actividades p{
+        font-size: 15px;
+    }
+
+    .varias-actividades{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .varias-actividades p{
+        font-size: 18px;
+        background-color: #535b16;
+        color: #fff;
+    }
 }
